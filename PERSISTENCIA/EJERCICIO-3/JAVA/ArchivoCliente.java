@@ -31,7 +31,7 @@ public class ArchivoCliente {
         }
     }
 
-    // ✅ b) Implementa buscarCliente(int c) a través del id.
+   
     public Cliente buscarCliente(int c) {
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             String linea;
@@ -50,7 +50,7 @@ public class ArchivoCliente {
         return null;
     }
 
-    // ✅ c) Implementa buscarCelularCliente(int c)
+  
     public void buscarCelularCliente(int c) {
         Cliente encontrado = buscarCliente(c);
         if (encontrado != null) {
